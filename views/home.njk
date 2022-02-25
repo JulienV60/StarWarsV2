@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{%block css %}
+  <link rel="stylesheet" href="Public/css/style.css"/>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+{% for item in data%}
+
+<h1>{{item.title}}</h1>
+<h2>{{item.episode}}</h2>
+<h5>{{item.release}}</h5>
+<p>{{item.opening}}</p>
+{% endfor %}
+<a href="/Director">Directors</a>
+<a href="/Producer">Realisators</a>
+</div>
+
+{% endblock %}
+

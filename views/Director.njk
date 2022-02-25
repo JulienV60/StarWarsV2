@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{%block css %}
+  <link rel="stylesheet" href="Public/css/style.css"/>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+{% for item in data%}
+
+<h1>{{item.firstName}}{{item.lastName}}</h1>
+<h2>{{item.age}}</h2>
+<h3>{{item.DirectorMovies}}</h3>
+
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
+
